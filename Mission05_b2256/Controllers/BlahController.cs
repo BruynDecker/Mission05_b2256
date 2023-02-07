@@ -12,7 +12,13 @@ namespace Mission05_b2256.Controllers
         {
             return View();
         }
+        [HttpGet]
         public IActionResult GradeCalc()
+        {
+            return View();
+        }
+        [HttpPost]
+        public IActionResult GradeCalc (object model)
         {
             return View();
         }
