@@ -1,0 +1,25 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewData["Title"]</title>
+    <meta charset="utf-8" />
+    <link rel="shortcut icon" type="image/jpg" href="img/bruyn_headshot_Xim_icon.ico" />
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/StyleSheet.css" rel="stylesheet" />
+</head>
+<body>
+    <nav>
+        <a asp-controller="blah" asp-action="Index">Home</a>
+        <a asp-controller="blah" asp-action="GradeCalc">Fan Mail</a>
+    </nav>
+    <div>
+        @RenderBody()
+    </div>
+    <footer>This is the footer</footer>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="lib/jquery/jquery-3.6.3.min.js"></script>
+    <script src="js/JavaScript.js"></script>
+</body>
+</html>

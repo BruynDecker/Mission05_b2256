@@ -22,7 +22,10 @@ namespace Mission05_b2256
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
-
+            if (env.IsEnvironment("Development"))
+            {
+                app.UseDeveloperExceptionPage();
+            }
             app.UseStaticFiles();
 
             app.UseRouting();
@@ -31,7 +34,7 @@ namespace Mission05_b2256
             {
                 endpoints.MapControllerRoute(
                     name: "default",
-                    pattern: "{controller-Blah}/{action=Index}/{id?}"
+                    pattern: "{controller=Blah}/{action=Index}/{id?}"
                     );
             });
         }

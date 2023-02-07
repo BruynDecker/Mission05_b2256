@@ -12,5 +12,11 @@ namespace Mission05_b2256.Controllers
         {
             return View();
         }
+        public IActionResult GradeCalc()
+        {
+            return View();
+        }
+        
+
     }
 }
