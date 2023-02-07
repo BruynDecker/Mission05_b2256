@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Mission05_b2256.Models
 
 namespace Mission05_b2256.Controllers
 {
@@ -18,7 +19,7 @@ namespace Mission05_b2256.Controllers
             return View();
         }
         [HttpPost]
-        public IActionResult GradeCalc (object model)
+        public IActionResult GradeCalc (GradeCalcModels model)
         {
             return View();
         }

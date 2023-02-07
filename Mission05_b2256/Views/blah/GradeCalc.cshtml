@@ -1,11 +1,11 @@
 ﻿@page
-@model Mission05_b2256.Views.blah.Index1Model
 @{
 }
+@model Mission05_b2256.Models.GradeCalcModels;
 <h2>Calculate Grade:</h2>
 <form>
     <label>Assignments: </label>
-    <input id="textAsn" name="Assignment"/><br />
+    <input id="textAsn" asp-for="Assignment"/><br />
     <label>Group Project:</label>
     <input id="gp" name="Project"/><br />
     <label>Quizzes:</label>
