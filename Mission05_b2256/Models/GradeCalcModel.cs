@@ -12,12 +12,15 @@ namespace Mission05_b2256.Models
         public string Assignment { get; set; }
 
         //setter
-
+        [Required]
         public int Project { get; set; }
+        [Required]
         public int Quizzes { get; set; }
+        [Required]
         public int Midterm { get; set; }
-
+        [Required]
         public int Final { get; set; }
+        [Required]
         public int Intex { get; set; }
     }
 }

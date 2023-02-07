@@ -1,25 +1,26 @@
-﻿
-@*
-    
+﻿@*
+
 *@
 @{
+    ViewData["Title"] = "Bruyn Decker's awesome grade calculator";
 }
 @model GradeCalcModels;
 <h2>Calculate Grade:</h2>
 <form>
     <label>Assignments: </label>
-    <input id="textAsn" asp-for="Assignment"/><br />
+    <input id="textAsn" asp-for="Assignment" /><br />
     <label>Group Project:</label>
-    <input id="gp" asp-for="Project"/><br />
+    <input id="gp" asp-for="Project" /><br />
     <label>Quizzes:</label>
-    <input id="quizzes" asp-for="Quizzes"/><br />
+    <input id="quizzes" asp-for="Quizzes" /><br />
     <label>Midterm Exam:</label>
-    <input id="mExam" asp-for="Midterm"/><br />
+    <input id="mExam" asp-for="Midterm" /><br />
     <label>Final Exam:</label>
-    <input id="fExam" asp-for="Final"/><br />
+    <input id="fExam" asp-for="Final" /><br />
     <label>INTEX:</label>
-    <input id="intex" asp-for="Intex"/><br />
+    <input id="intex" asp-for="Intex" /><br />
     <input id="btnSend" type="button" value="Send Message" />
 
-    <div asp-validation-summary="All"></div>
+    <div asp-validation-summary="All">hi</div>
 </form>
+<script src="js/JavaScript.js"></script>
