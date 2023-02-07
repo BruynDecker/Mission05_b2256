@@ -1,22 +1,25 @@
-﻿@page
+﻿
+@*
+    
+*@
 @{
 }
-@model Mission05_b2256.Models.GradeCalcModels;
+@model GradeCalcModels;
 <h2>Calculate Grade:</h2>
 <form>
     <label>Assignments: </label>
     <input id="textAsn" asp-for="Assignment"/><br />
     <label>Group Project:</label>
-    <input id="gp" name="Project"/><br />
+    <input id="gp" asp-for="Project"/><br />
     <label>Quizzes:</label>
-    <input id="quizzes" name="Quizzes"/><br />
+    <input id="quizzes" asp-for="Quizzes"/><br />
     <label>Midterm Exam:</label>
-    <input id="mExam" name="Midterm"/><br />
+    <input id="mExam" asp-for="Midterm"/><br />
     <label>Final Exam:</label>
-    <input id="fExam" name="Final"/><br />
+    <input id="fExam" asp-for="Final"/><br />
     <label>INTEX:</label>
-    <input id="intex" name="Intex"/><br />
-    <p id="result"></p>
-    <textarea id="result" rows="4"></textarea>
+    <input id="intex" asp-for="Intex"/><br />
     <input id="btnSend" type="button" value="Send Message" />
+
+    <div asp-validation-summary="All"></div>
 </form>

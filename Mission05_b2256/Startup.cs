@@ -34,7 +34,7 @@ namespace Mission05_b2256
             {
                 endpoints.MapControllerRoute(
                     name: "default",
-                    pattern: "{controller=Blah}/{action=GradeCalc}/{id?}"
+                    pattern: "{controller=Blah}/{action=Index}/{id?}"
                     );
             });
         }
