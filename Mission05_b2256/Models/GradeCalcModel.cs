@@ -8,6 +8,8 @@ namespace Mission05_b2256.Models
 {
     public class GradeCalcModels
     {
+        //Models for each of the variable values that can be used to calculate grades
+        //They are required and must be between 0 and 100
         [Required]
         [Range(0, 100, ErrorMessage = "Group Assignment score must be between 0 and 100")]
         public int Assignment { get; set; }
