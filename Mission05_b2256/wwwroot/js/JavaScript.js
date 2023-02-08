@@ -43,5 +43,5 @@ $("#btnSend").click(function () {
     }
 
     // Put the calculated letter grade in the result div
-    $("#letterGrade").value(letterGrade);
+    alert("Your final grade is: " + letterGrade);
 })
