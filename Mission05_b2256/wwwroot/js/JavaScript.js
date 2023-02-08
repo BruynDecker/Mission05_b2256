@@ -42,6 +42,6 @@ $("#btnSend").click(function () {
         letterGrade = "E";
     }
 
-    // Put the calculated letter grade in the textarea in the form
-    $("textarea").val("Your final grade is: " + letterGrade);
+    // Put the calculated letter grade in the result div
+    $("#letterGrade").value(letterGrade);
 })
