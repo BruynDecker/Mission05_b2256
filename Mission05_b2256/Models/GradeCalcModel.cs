@@ -32,6 +32,5 @@ namespace Mission05_b2256.Models
         [Range(0, 100, ErrorMessage = "Intex score must be between 0 and 100")]
         public int Intex { get; set; }
 
-        public string JavascriptToRun { get; set; }
     }
 }

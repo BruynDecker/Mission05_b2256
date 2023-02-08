@@ -22,7 +22,6 @@ namespace Mission05_b2256.Controllers
         [HttpPost]
         public IActionResult GradeCalc (GradeCalcModels model)
         {
-            model.JavascriptToRun = "CalcThatGrade()"; ;
             return View();
         }
         
